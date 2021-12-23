@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+header {
+    padding: 30px;
+    font-size: 35px;
+    color: white;
+    background-color: #666;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+
+nav {
+    float: left;
+    width: 20%;
+    height: 30em;
+    padding: 1.5em;
+    background: #ccc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 0 2em 2em ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    color: darkblue;
+}
+
+/* -------------------------------------------------------------------------- */
+
+main {
+    float: left;
+    padding: 1.5em;
+    width: 80%;
+    height: 30em;
+    background-color: #f1f1f1;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* clearfix */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #777;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    nav, main {
+        width: 100%;
+        height: auto;
+    }
+}
